@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+form {
+    display: inline-grid;
+    padding: 20px;
+    margin: 50px;
+    width: auto;
+    border: 5px solid rgb(11, 34, 2);
+    
+    background-color: whitesmoke;
+    object-fit: fill;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+
+img {
+    max-width: 100%;
+}
+
+.image_inputs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px;
+}
+
+.image_inputs div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.admission{
+    display: flex;
+    
+}
+
+.info_student {
+    /* border: 2px solid black; */
+    justify-items: center;
+}
+
+.info_student .details {
+    display: grid;
+    grid-template-columns:  auto auto auto 20px;
+    margin: 15px 35px;
+}
+
+.info_student .details input {
+    width: 90%;
+}
+
+.gender {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 15px 35px;
+    /* border: 2px solid black; */
+}
+
+.gender_select {
+    border: 1px solid black;
+    width: auto;
+}

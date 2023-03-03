@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="./" method="post">
+        <img src="./Logo.png" alt="title">
+        <!-- PhotoGraphs -->
+
+        <div class="image_inputs">
+            <div>
+                <label for="father_image">
+                    Affix Recent Passort size photograpgh of Father
+                    <input id="father_image" type="file" name="father_image" accept="image/*">
+                </label>
+            </div>
+
+            <div>
+                <label for="father_image">
+                    Affix Recent Passort size photograpgh of Mother
+                    <input id="father_image" type="file" name="father_image" accept="image/*">
+                </label>
+            </div>
+
+            <div>
+                <label for="father_image">
+                    Affix Recent Passort size photograpgh of Student
+                    <input id="father_image" type="file" name="father_image" accept="image/*">
+                </label>
+                <br>
+            </div>
+        </div>
+
+        <!-- Admission Required -->
+        <div class="admission">
+        <label for="admission_for_class" 
+           <p>A. Admission Required for class</p> 
+            <input type="number" name="" id="admission_for_class" important>
+        </label>
+        </div>
+        <!-- Student Information -->
+        <h3>1. INFORMATION OF THE STUDENT</h3>
+        <div class="info_student">
+            <div class="details"> 
+                <label for="name">
+                    <p>First Name</p>
+                    <input type="text" name="name" id="name">
+                </label>
+
+                <!-- Name -->
+                <label for="name">
+                    <p>Middle Name</p>
+                    <input type="text" name="name" id="name">
+                </label>
+
+
+                <label for="name">
+                    <p>Last Name</p>
+                    <input type="text" name="name" id="name">
+                </label>
+                <br>
+        </div>
+
+            <!-- Gender -->
+            <div class="gender">
+                <label for="gender">
+                    Gender
+                    <div class="gender_select">
+                        <input type="radio" name="gender" id="gender" value="male">Male
+                        <input type="radio" name="gender" id="gender" value="female">Female
+                    </div>
+                </label>
+            
+
+                <!-- Date Of Birth -->
+                <label for="dob" ">
+                    Date of Birth
+                    <div>
+                        <input type="date" name="dob" id="dob" style="margin-right: 20px;"">
+                    </div>
+                    Date Of Birth in words
+                    <div>
+                        <input type="text" name="dob_words" id="dob_words" id="dob_words">
+                    </div>
+                </label>
+                <br>
+            </div>
+            <!-- Blood Group -->
+            <label for="blood">
+                Blood Group
+                <input type="text" name="blood" id="blood">
+            </label>
+
+            <!-- Religion -->
+            <label for="religion">
+                Religion
+                <input type="text" name="religion" id="religion">
+            </label>
+
+            <!-- Caste -->
+            <label for="caste">
+                Caste
+                <input type="text" name="caste" id="caste">
+            </label>
+
+            <!-- Category -->
+            <label for="category">
+                Category (GEN/OBC/ST/SC)
+                <input type="text" name="category" id="category">
+            </label>
+
+            <!-- Nationality -->
+            <label for="nationality">
+                Nationality
+                <input type="text" name="nationality" id="nationality">
+            </label>
+            <br>
+
+            <!-- Aadhar Number -->
+            <label for="aadhar_number">
+                Aadhar Number
+                <input type="number" name="aadhar_number" id="aadhar_number">
+            </label>
+            <br>
+        </div>
+        
+        <!-- Bank Account Details -->
+        <div class="bank_account_details">
+            <H3>2. BANK ACCOUNT DETAILS (Kindly mention the bank A/c details of the student only)</H3>
+
+            <!-- Account Details -->
+            <label for="ac_number">
+                Bank A/c Number:
+                <input type="number" name="ac_number" id="ac_number">
+                <label for="ifsc">
+                    IFSC:
+                    <input type="text" name="ifsc" id="ifsc">
+                </label>
+            </label>
+            
+            <label for="bank_name">
+                Bank Name:
+                <input type="text" name="bank_name" id="bank_name">
+            </label>
+
+            <label for="branch">
+                Branch:
+                <input type="text" name="branch" id="branch">
+            </label>
+            <br>
+
+            <label for="SMS_number">
+                <b>Preferred Mobile Number for school SMS</b>
+                <input type="number" name="SMS_number" id="SMS_number">
+            </label>
+        </div>
+
+        <!-- Family Information -->
+        <div class="family_info">
+            <h3>FAMILY INFORMATION</h3>
+
+            <!-- Father Details -->
+            <h4>3. Father Details</h4>
+            <table style="border: 2px solid black;">
+                <tr>
+                    <td>
+                        <label for="f_name">
+                            Father's Name:
+                            <input type="text" name="f_name" id="f_name">
+                        </label>
+                    </td>   
+                    <td>
+                        <label for="f_number">
+                            Mobile Number:
+                            <input type="number" name="f_number" id="f_number">
+                        </label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for=educational_qualification">
+                            Educattional Qualification:
+                            <input type="text" name="educational_qualification" id="educational_qualification">
+                        </label>
+                    </td>
+                    
+                    <td rowspan="3">
+                        <label for="office_address">
+                            Office Address with phone number:
+                            <input type="text" name="office_address" id="office_address">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="occupation">
+                            Occupation:
+                            <input type="text" name="occupation" id="occupation">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="designation">
+                            Designation:
+                            <input type="text" name="designation" id="designation">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="annual_income">
+                            Annual Income
+                            <input type="number" name="annual_income" id="annual_income">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="f_aadhar_number">
+                            Aadhar Number:
+                            <input type="number" name="f_aadhar_number" id="f_aadhar_number">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <!-- END Father Details -->
+
+            <!-- Mother Details -->
+            <h4>4. Mother Details</h4>
+            <table style="border: 2px solid black;">
+                <tr>
+                    <td>
+                        <label for="m_name">
+                            Mother's Name:
+                            <input type="text" name="m_name" id="m_name">
+                        </label>
+                    </td>   
+                    <td>
+                        <label for="m_number">
+                            Mobile Number:
+                            <input type="number" name="m_number" id="m_number">
+                        </label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for=educational_qualification">
+                            Educattional Qualification:
+                            <input type="text" name="educational_qualification" id="educational_qualification">
+                        </label>
+                    </td>
+                    
+                    <td rowspan="3">
+                        <label for="office_address">
+                            Office Address with phone number:
+                            <input type="text" name="office_address" id="office_address">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="occupation">
+                            Occupation:
+                            <input type="text" name="occupation" id="occupation">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="designation">
+                            Designation:
+                            <input type="text" name="designation" id="designation">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="annual_income">
+                            Annual Income
+                            <input type="number" name="annual_income" id="annual_income">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="m_aadhar_number">
+                            Aadhar Number:
+                            <input type="number" name="f_aadhar_number" id="f_aadhar_number">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <!-- END Mother Details -->
+
+            <h4>5. Sibling (Another real brotheror sister presently studying at Prakriti International School)</h4>
+            <p style="display: inline; width: 30px;">
+                Please Mention Name, Scholar No.
+                and Class. Please enclose copy of 
+                Mark Sheet of brother/sister.
+            </p>
+            <table style="display: inline;">
+                <tr>
+                    <th>Name</th>
+                    <th>Scholar No.</th>
+                    <th>Class</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text">
+                        <br>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                        <br>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                        <br>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Address Details -->
+        <div class="addresses">
+            <table>
+                <tr>
+                    <th>6. CORRESPONDENCE ADDRESS</th>
+                    <th>7. PERMANENT ADDRESS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="c_Address">
+                            <input type="text" name="c_Address" id="c_Address">
+                            <br>
+                        </label>
+
+                        <label for="f_number">
+                            Father's Mobile Number:
+                            <input type="number" name="f_number" id="f_number">
+                            <br>
+                        </label>
+
+                        <label for="f_email">
+                            email ID:
+                            <input type="number" name="f_email" id="f_email">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="p_Address">
+                            <input type="text" name="p_Address" id="p_Address">
+                            <br>
+                        </label>
+
+                        <label for="m_number">
+                            Mother's Mobile Number:
+                            <input type="number" name="m_number" id="m_number">
+                            <br>
+                        </label>
+
+                        <label for="m_email">
+                            email ID:
+                            <input type="number" name="m_email" id="m_email">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Local Guardian's Details -->
+        <h4>8. Local Guardian's Details</h4>
+        <table style="border: 2px solid black;">
+            <tr>
+                <td>
+                    <label for="m_name">
+                        Guardians's Name:
+                        <input type="text" name="m_name" id="m_name">
+                    </label>
+                </td>   
+                <td>
+                    <label for="m_number">
+                        Mobile Number:
+                        <input type="number" name="m_number" id="m_number">
+                    </label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for=educational_qualification">
+                        Educattional Qualification:
+                        <input type="text" name="educational_qualification" id="educational_qualification">
+                    </label>
+                </td>
+                    
+                <td rowspan="3">
+                    <label for="office_address">
+                        <span>Office Address with phone number:</span>
+                        <input type="text" name="office_address" id="office_address">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="occupation">
+                        Occupation:
+                        <input type="text" name="occupation" id="occupation">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="designation">
+                        Designation:
+                        <input type="text" name="designation" id="designation">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="annual_income">
+                        Annual Income
+                        <input type="number" name="annual_income" id="annual_income">
+                    </label>
+                </td>
+                <td>
+                    <label for="m_aadhar_number">
+                        Aadhar Number:
+                        <input type="number" name="f_aadhar_number" id="f_aadhar_number">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Details of previous School -->
+        <h4>9. Details of Previous School</h4>
+        <label for="school_name">
+            School's Name
+            <input type="text" name="school_name" id="school_name">
+        </label>
+
+        <label for="board_name">
+            Name of the Board
+            <input type="text" name="board_name" id="board_name">
+        </label>
+
+        <label for="school_class">
+            Class
+            <input type="school_class" name="school_class" id="school_class">
+        </label>
+
+        <label for="grade_obtained">
+            Grade/Marks Obtained
+            <input type="number" name="grade_obtained" id="grade-obtained">
+        </label>
+        <!-- END of details -->
+
+        <h4>10. MEDICAL HISTORY (IF ANY)</h4>
+        <table>
+            <tr>
+                <td>
+                    Medical information pertinent to routine child care and emergencies(if any).
+                    <label for="medical_detail">
+                        <input type="text" name="medical_detail" id="medical_detail">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Alergies to food or medicine (describe, if any)
+                    <label for="alergy_detail">
+                        <input type="text" name="alergy_detail" id="alergy_detail">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Emergency Details -->
+        <h4>11. EMERGENCY DETAILS</h4>
+        <table>
+            <tr>
+                <td>Emergency Contact No. (Reg./Mobile)</td>
+                <td>Name of the person to be contacted</td>
+                <td>Relationship</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="emergency_detail">
+                        <input type="text" name="emergency_detail" id="emergency_detail">
+                    </label>
+                </td>
+                <td>
+                    <label for="person_contact">
+                        <input type="number" name="person_contact" id="person_contact">
+                    </label>
+                </td>
+                <td>
+                    <label for="relation">
+                        <input type="text" name="relation" id="relation">
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <!-- END -->
+
+
+        <h4>12. DO YOU WANT CONVEYANCE FACILITY?</h4>
+        <label for="facility"">
+            <input type="radio" name="facility" id="facility" value="yes">Yes
+            <input type="radio" name="facility" id="facility" value="yes">No
+        </label>
+
+        <!-- Declaration -->
+        <table>
+            <caption>
+                -DECLARATION-
+            </caption>
+            <td>
+                <label for="check">
+                    <input type="checkbox" name="check" id="check">
+                </label>
+                I have the authority to admit my child/ward into the school as the
+                parent/local gaurdian. I undertake the responsibility of providing 
+                any evidence needed to support the information provided here, if
+                necessary for any reason. I declare that the statements provided in this
+                application are correct to my knowledge and if found otherwise, i shall
+                abide by the decision of the management I agree to abide by the rules,
+                regulations and the fee structure of the school.
+            </td>
+        </table>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
